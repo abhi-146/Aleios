@@ -2,54 +2,75 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-    <script src="main.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <script src="main.js"></script>
 </head>
 
 <body>
-    <div class="main">
-      <div class="nav">
-        <div class="nav-left"><img src="./assets/logo.png" /></div>
-        <ul class="nav-right">
-            <div class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" >About us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html" class="active"><button class="nav-btn">Contact Us</button></a></li>
-            </div>
-        </ul>
+  <div class="main">
+    <div class="nav">
+      <div class="nav-left"><img src="./assets/logo.png" /></div>
+      <ul class="nav-right">
 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" class="active" "><button class="nav-btn">Contact Us</button></a></li>
+
+      </ul>
+    </div>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Any question or remarks? Just write us a message!</p>
+      <div class="contact-section">
+          <div class="contact-info">
+              <h2>Contact Information</h2>
+              <p>Say something to start a live chat!</p>
+              <ul>
+                  <li><i class="fas fa-phone"></i> +1012 3456 789</li>
+                  <li><i class="fas fa-envelope"></i> demo@gmail.com</li>
+                  <li><i class="fas fa-map-marker-alt"></i> <p>132 Dartmouth Street Boston, Massachusetts 02156 United States</p></li>
+              </ul>
+              <div class="social-icons">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-discord"></i></a>
+              </div>
+          </div>
+          <div class="contact-form">
+              <form action="#">
+                  <div class="form-group">
+                      <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" id="companyName" name="companyName" placeholder="Company Name">
+                  </div>
+                  <div class="form-group">
+                      <input type="email" id="email" name="email" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                      <textarea id="message" name="message" placeholder="Write your message.."></textarea>
+                  </div>
+                  <button class="submit-button" type="submit">Send Message</button>
+              </form>
+          </div>
+      </div>
+  </div>
     </div>
 
-        <div class="frm-wrapper">
-            <div class="frm-title">
-              <h1>Contact Us Form</h1>
-            </div>
-            <div class="frm-contact-form">
-              <div class="frm-input-fields">
-                <input type="text" class="frm-input" placeholder="Name">
-                <input type="text" class="frm-input" placeholder="Email Address">
-                <input type="text" class="frm-input" placeholder="Phone">
-                <input type="text" class="frm-input" placeholder="Subject">
-              </div>
-              <div class="frm-msg">
-                <textarea class="frm-textarea" placeholder="Message"></textarea>
-                <div class="frm-btn">Send</div>
-              </div>
-            </div>
-          </div>
-          
-
-        <div class="footer"></div>
 </body>
 
 </html>
