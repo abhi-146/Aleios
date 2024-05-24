@@ -36,10 +36,10 @@
       transform: translateY(0);
     }
     40% {
-      transform: translateY(-30px);
+      transform: translateY(-20px);
     }
     60% {
-      transform: translateY(-15px);
+      transform: translateY(-10px);
     }
   }
   
@@ -57,7 +57,7 @@
   .slideInLeft {
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1.5s ease-in-out;
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
   
   .slideInLeft.visible {
@@ -66,9 +66,10 @@
   }
   
   .slideInRight {
+
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1.5s ease-in-out;
-    transform: translateX(50%);
+    transform: translateX(0%);
   }
   
   .slideInRight.visible {
