@@ -343,17 +343,16 @@ body {
 
 @media only screen and (max-width: 480px) {
   .main{
-    width: 140%;
+    width: 100vw;
     padding: 0;
     overflow: hidden;
   }
 
+  
+
   .nav {
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    align-items: center;
+    flex-direction: column;
     background-color: #FAFAFA;
     border-radius: 50px;
     padding: 10px 20px;
@@ -361,15 +360,30 @@ body {
   }
 
   .nav-right{
-    width: auto;
+    width: 135%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    margin-left: -43px;
   }
 
   .crds{
     display: flex;
     flex-direction: column;
+  }
+
+  .crds-right h2 {
+    margin-left: 20px;
+    width: 165%;
+  }
+
+  .crds-right h3 {
+    margin-left: 10px;
+    width: 165%;
+  }
+
+  .crds-right p{
+    width: 140%;
+    margin-left: 10px;
   }
 
   .crds-reverse{
@@ -383,7 +397,23 @@ body {
   }
 
   .crd-img-2{
-    margin-left: 0px;
+    width: 120%;
+    margin-left: -37px;
+  }
+
+  .crds-left h2{
+    margin-left: -70px;
+    width: 165%;
+  }
+
+  .crds-left h3{
+    margin-left: -70px;
+    width: 150%;
+  }
+
+  .crds-left p{
+    width: 136%;
+    margin-left: -52px;
   }
 
   .card-img, .card-img-2 {
@@ -394,6 +424,7 @@ body {
   .card-img-2, .card-img {
     margin: 0;
     order: -1;
+    margin-left: 55px;
   }
 
   .crds.reverse .card-img-2 {
@@ -425,11 +456,28 @@ body {
   
   }
 
+  .banner-text h1{
+    width: 120%;
+    margin-left: -27px;
+  }
+  .banner-text h2{
+    width: 120%;
+    margin-left: -27px;
+  }
+
+  .banner-button{
+    margin-right: 60px;
+  }
+
+  .footer{
+    width: 120vw;
+  }
+
 }
 
 @media only screen and (max-width: 380px) {
   .main{
-    width: 150%;
+    width: 100vw;
     padding: 0;
     overflow: hidden;
   }
@@ -441,5 +489,24 @@ body {
     margin-left: 40px;
   }
 
+  .front-title {
+    width: 80%;
+    margin-left: 82px;
+  }
+
+  .title-alieos{
+    margin-left: 90px;
+  }
+
+  .front-desc{
+    margin-left: 90px;
+    width: 60%;
+  }
+
+  .frnt-button{
+    margin-left: 90px;
+  }
+
+ 
   
 }
