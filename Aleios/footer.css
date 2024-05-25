@@ -1,5 +1,24 @@
   /* Footer Section Styles */
   /* Footer CSS */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .main {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
   footer {
     background-color: #1E55A4;
     color: white;
@@ -20,9 +39,10 @@
   }
   
   .footer-left {
+    gap: 10px;
     display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: flex-start;
       height: 100px;
       width: 60%;
       align-items: flex-end;
@@ -122,3 +142,40 @@
     border-radius: 10px;
     padding: 8px
   }
+
+
+  @media only screen and (max-width: 480px) {
+
+    .footer{
+      width: 120vw;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      padding: 0 10%;
+      margin-bottom: 20px;
+      margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+
+  .main{
+    width: 100vw;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .footer{
+    width: 120vw;
+  }
+
+  .footer-top {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+}
