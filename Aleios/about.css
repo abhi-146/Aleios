@@ -1,296 +1,307 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAFAFA;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.nav-left img {
+  max-width: 100%;
+  height: 3rem;
+}
+
+.nav-right {
+  padding-left: 20px;
+  padding: auto;
+  height: 60px;
+  width: 32%;
+  border-radius: 50px;
+  list-style: none;
+  display: flex;
+  background-color: #fefeff;
+  gap: 2rem;
+}
+
+.nav-right li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right a.active {
+  color: #1E55A4;
+}
+
+.nav-btn {
+  border: 1px solid rgba(190, 190, 190, 1);
+  background-color: rgba(254, 254, 255, 1);
+  border-radius: 40px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Header Section Styles */
+.front1 {
+  color: rgba(250, 250, 250, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/Rectangle 14.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 40px;
+  gap: 20px;
+}
+
+.front-2 {
+  max-width: 600px;
+}
+
+.front-2 h1 {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.front-btn {
+  font-weight: 600;
+  border: none;
+  background-color: rgba(30, 85, 164, 1);
+  color: white;
+  padding: 15px 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+/* Principles Section Styles */
+.principle-main {
+  padding: 40px 0;
+}
+
+.principles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.principle-heading {
+  color: #1E55A4;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 30px;
+}
+
+.principle-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.principle-item {
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.principle-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.principle-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.principle-desc {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Banner Section Styles */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.banner-text h1 {
+  font-weight: 600;
+}
+
+.banner-text h2 {
+  font-size: 40px;
+}
+
+.banner-highlight {
+  color: rgba(30, 85, 164, 1);
+  font-weight: 900;
+}
+
+
+.banner-btn {
+  font-weight: 600;
+  border: none;
+  background-color: rgba(30, 85, 164, 1);
+  color: white;
+  padding: 15px 50px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.frnt-button {
+  font-weight: 900;
+  border: none;
+  color: rgba(250, 250, 250, 1);
+  background-color: rgba(30, 85, 164, 1);
+  padding: 15px 30px;
+  border-radius: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 1024px) {
   .main {
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
+    overflow: hidden;
   }
-  
-  /* Navigation Styles */
+
   .nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .nav-right {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .front1 {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
     align-items: center;
     background-color: #FAFAFA;
     border-radius: 50px;
     padding: 10px 20px;
     margin-bottom: 30px;
   }
-  
-  .nav-left img {
-    max-width: 100%;
-    height: 3rem;
-  }
-  
+
   .nav-right {
-    padding-left: 20px;
-    padding: auto;
-    height: 60px;
-    width: 32%;
-    border-radius: 50px;
-    list-style: none;
-    display: flex;
-    background-color: #fefeff;
-    gap: 2rem;
-  }
-  
-  .nav-right li {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-right a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .nav-right a.active {
-    color: #1E55A4;
-  }
-  
-  .nav-btn {
-    border: 1px solid rgba(190, 190, 190, 1);
-    background-color: rgba(254, 254, 255, 1);
-    border-radius: 40px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .nav-btn:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Header Section Styles */
-  .front1 {
-    color: rgba(250, 250, 250, 1);
+    width: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./assets/Rectangle 14.png");
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    padding: 40px;
-    gap: 20px;
-  }
-  
-  .front-2 {
-    max-width: 600px;
-  }
-  
-  .front-2 h1 {
-    margin-bottom: 30px;
-    font-size: 40px;
+    justify-content: flex-end;
   }
 
-  .front-btn{
-    font-weight: 600;
-    border: none;
-    background-color: rgba(30, 85, 164, 1);
-    color: white;
-    padding: 15px 50px;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-top: 40px;
+
+}
+
+@media only screen and (max-width: 480px) {
+  .main {
+    width: 100vw;
+    padding: 0;
+    overflow: hidden;
   }
-  
-  /* Principles Section Styles */
-  .principle-main {
-    padding: 40px 0;
-  }
-  
-  .principles {
+
+
+
+  .nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    background-color: #FAFAFA;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
   }
-  
-  .principle-heading {
-    color: #1E55A4;
-    font-weight: 400;
-    font-size: 2.5rem;
-    margin: 30px;
-  }
-  
-  .principle-container {
+
+  .nav-right {
+    width: 135%;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -43px;
   }
-  
-  .principle-item {
-    max-width: 300px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .principle-img img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .principle-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 10px 0;
-  }
-  
+
   .principle-desc {
+    width: 100%;
     font-size: 1rem;
     font-weight: 400;
   }
-  
-  /* Banner Section Styles */
-  .banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px;
+
+  .front-2 p{
+    line-height: 30px;
   }
-  
-  .banner-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+  .front-img img{
+    width: 104%;
   }
-  
-  .banner-text h1{
-    font-weight: 600;
-  }
-  
-  .banner-text h2{
-    font-size: 40px;
-  }
-  
-  .banner-highlight {
-    color: rgba(30, 85, 164, 1);
-    font-weight: 900;
+
+  .footer{
+    width: 120vw;
   }
 
 
-  .banner-btn {
-    font-weight: 600;
-    border: none;
-    background-color: rgba(30, 85, 164, 1);
-    color: white;
-    padding: 15px 50px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .frnt-button {
-    font-weight: 900;
-    border: none;
-    color: rgba(250, 250, 250, 1);
-    background-color: rgba(30, 85, 164, 1);
-    padding: 15px 30px;
-    border-radius: 40px;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-  
-  
-  /* Responsive Styles */
-  @media only screen and (max-width: 1024px) {
-    .main{
-        overflow: hidden;
-      }
-    
-      .nav{
-        display: flex;
-        flex-direction: row;
-      }
-    
-      .nav-right{
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-      }
-  
-    .front1 {
-      padding: 20px;
-      flex-direction: column;
-    }
-  
-    
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        /* justify-content: space-between; */
-        align-items: center;
-        background-color: #FAFAFA;
-        border-radius: 50px;
-        padding: 10px 20px;
-        margin-bottom: 30px;
-      }
-    
-      .nav-right{
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-      }
-  
-    
-  }
-  
-  @media only screen and (max-width: 480px) {
-        .main{
-          width: 100vw;
-          padding: 0;
-          overflow: hidden;
-        }
-      
-        .nav {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          /* justify-content: space-between; */
-          align-items: center;
-          background-color: #FAFAFA;
-          border-radius: 50px;
-          padding: 10px 20px;
-          margin-bottom: 30px;
-        }
-      
-        .nav-right{
-          width: auto;
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-        }
+}
 
-        .principle-desc {
-            width: 100%;
-            font-size: 1rem;
-            font-weight: 400;
-          }
-
-        
+@media only screen and (max-width: 380px) {
+  .main {
+    width: 100vw;
+    overflow: hidden;
   }
-
-  @media only screen and (max-width: 380px) {
-    .main{
-      width: 100vw;
-      overflow: hidden;
-    }
 }

@@ -286,28 +286,34 @@
   
   @media only screen and (max-width: 480px) {
     .main{
-        width: 150%;
+        width: 100vw;
         padding: 0;
         overflow: hidden;
       }
     
       .nav {
-        width: 100%;
         display: flex;
-        flex-direction: row;
-        /* justify-content: space-between; */
-        align-items: center;
+        flex-direction: column;
         background-color: #FAFAFA;
         border-radius: 50px;
         padding: 10px 20px;
         margin-bottom: 30px;
       }
     
-      .nav-right{
-        width: auto;
+      .nav-right {
+        width: 135%;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        margin-left: -43px;
+      }
+
+      .product-description{
+        width: 85%;
+      }
+
+      .product-description p{
+        line-height: 30px;
+        text-align: justify;
       }
     
       .crds{
@@ -315,20 +321,69 @@
         flex-direction: column;
       }
     
+      .crds-right h2 {
+        margin-left: 20px;
+        width: 165%;
+      }
+    
+      .crds-right h3 {
+        margin-left: 10px;
+        width: 165%;
+      }
+    
+      .crds-right p{
+        width: 140%;
+        
+      }
+    
+      .crds-reverse{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+      }
+    
+      .crds-right{
+        margin-right: 50px;
+      }
+    
+      .crd-img-2{
+        width: 120%;
+        margin-left: -20px;
+      }
+    
+      .crds-left h2{
+        margin-left: 40px;
+        width: 165%;
+      }
+    
+      .crds-left h3{
+        margin-left: 70px;
+        width: 150%;
+      }
+    
+      .crds-left p{
+        width: 136%;
+        margin-left: 22px;
+      }
+    
       .card-img, .card-img-2 {
         margin: 0;
         order: 1;
       }
     
-      .card-img-2, .card-img {
+      .card-img {
         margin: 0;
         order: -1;
-        width: 60%;
+        margin-right: 67px;
+      }
+
+      .card-img-2{
+        margin: 0;
+        order: -1;
       }
     
       .crds.reverse .card-img-2 {
         order: -1;
-        width: 40%;
       }
     
       .crds-right{
@@ -338,22 +393,16 @@
     
       .crds-left{
         width: 60%;
-        margin-right: 20px;
+        margin-right: 160px;
         margin-top: 20px;
       }
-
-      .crd-img-1, .crd-img-2{
-        width: 100%;
-        border-radius: 10px;
-      }
-    
-      .card-img-2{
-        width: 25%;
-      }
-
       .banner{
         width: 100%;
       
+      }
+
+      .footer{
+        width: 120vw;
       }
     
   }
