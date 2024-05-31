@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main {
@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 50px;
   padding: 10px 20px;
   margin-bottom: 30px;
@@ -56,7 +56,7 @@ body {
 }
 
 .nav-right a.active {
-  color: #1E55A4;
+  color: #1e55a4;
 }
 
 .nav-btn {
@@ -119,7 +119,7 @@ body {
 }
 
 .principle-heading {
-  color: #1E55A4;
+  color: #1e55a4;
   font-weight: 400;
   font-size: 2.5rem;
   margin: 30px;
@@ -186,7 +186,6 @@ body {
   font-weight: 900;
 }
 
-
 .banner-btn {
   font-weight: 600;
   border: none;
@@ -209,26 +208,25 @@ body {
   cursor: pointer;
 }
 
-.principle-img-second-layer img{
+.principle-img-second-layer img {
   max-height: 82px;
-  max-width: 82px
+  max-width: 82px;
 }
 
-.principle-container-one, .principle-container-two{
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: 60px;
+.principle-container-one,
+.principle-container-two {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 60px;
 }
-.principle-container-one{
+.principle-container-one {
   margin-top: 20px;
 }
 
-.principle-container-two{
+.principle-container-two {
   margin-top: 30px;
 }
-
-
 
 /* Responsive Styles */
 @media only screen and (max-width: 1024px) {
@@ -252,8 +250,6 @@ body {
     padding: 20px;
     flex-direction: column;
   }
-
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -263,7 +259,7 @@ body {
     flex-direction: row;
     /* justify-content: space-between; */
     align-items: center;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     border-radius: 50px;
     padding: 10px 20px;
     margin-bottom: 30px;
@@ -275,8 +271,6 @@ body {
     flex-direction: row;
     justify-content: flex-end;
   }
-
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -286,12 +280,10 @@ body {
     overflow: hidden;
   }
 
-
-
   .nav {
     display: flex;
     flex-direction: column;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     border-radius: 50px;
     padding: 10px 20px;
     margin-bottom: 30px;
@@ -308,22 +300,29 @@ body {
     width: 100%;
     font-size: 1rem;
     font-weight: 400;
-
   }
 
-  .front-2 p{
+  .front-2 p {
     line-height: 30px;
   }
 
-  .front-img img{
+  .front-img img {
     width: 104%;
   }
 
-  .footer{
+  .footer {
     width: 120vw;
   }
 
+  .principle-container-one {
+    margin-top: 20px;
+    display: inline;
+  }
 
+  .principle-container-two {
+    margin-top: 30px;
+    display: inline;
+  }
 }
 
 @media only screen and (max-width: 380px) {
