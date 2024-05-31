@@ -29,6 +29,9 @@ body {
 .nav-left img {
   max-width: 100%;
   height: 3rem;
+  position: relative;
+  top: 4px;
+  border-radius: 5px;
 }
 
 .nav-right {
@@ -95,7 +98,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 600px;
   margin-bottom: 20px;
 }
 
@@ -105,19 +107,38 @@ body {
   font-size: 4rem;
   font-weight: 600;
   margin: 10px 0;
+
+  text-align: center;
+  position: relative;
+  left: 120px;
+  width: 80%;
 }
 
 .front-desc {
-  width: 73%;
   text-align: start;
   font-size: 1rem;
   line-height: 1.5;
   margin: 10px 0;
+  margin-top: 10px;
+  width: 50%;
+
+  position: relative;
+  left: 80px;
 }
 
 .frnt-img {
   max-width: 100%;
   height: auto;
+  width: 80%;
+  height: 350px;
+  margin-top: 10px;
+  position: relative;
+  left: 75px;
+}
+
+.frnt-img img {
+  height: 350px;
+
 }
 
 .frnt-button {
@@ -131,6 +152,10 @@ body {
   cursor: pointer;
 }
 
+.banner-frnt-btn {
+  margin-top: 50px;
+}
+
 .card-1 {
   display: flex;
   flex-direction: column;
@@ -138,7 +163,7 @@ body {
   margin-top: 5rem;
 }
 
-.card-2{
+.card-2 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -146,33 +171,33 @@ body {
   margin-bottom: 5rem;
 }
 
-.crds-right{
+.crds-right {
   width: 50%;
 }
 
-.crds-right h2{
+.crds-right h2 {
   font-weight: 700;
   color: #1E55A4;
   margin-bottom: 10px;
 }
 
-.crds-right h3{
+.crds-right h3 {
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.crds-left h2{
+.crds-left h2 {
   font-weight: 700;
   color: #1E55A4;
   margin-bottom: 10px;
 }
 
-.crds-left h3{
+.crds-left h3 {
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.crds-left{
+.crds-left {
   margin-left: 90px;
 }
 
@@ -184,7 +209,7 @@ body {
   justify-content: center;
 }
 
-.crds-reverse{
+.crds-reverse {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -193,7 +218,8 @@ body {
 
 }
 
-.card-img, .card-img-item {
+.card-img,
+.card-img-item {
   max-width: 100%;
   height: auto;
   margin-left: 120px;
@@ -201,12 +227,13 @@ body {
   height: 40%;
 }
 
-.crd-img-1, .crd-img-2{
+.crd-img-1,
+.crd-img-2 {
   width: 85%;
   border-radius: 10px;
 }
 
-.crd-img-2{
+.crd-img-2 {
   width: 70%;
   margin-left: 40px;
 }
@@ -230,9 +257,9 @@ body {
   max-width: 600px;
 }
 
-.front-2 h1{
+.front-2 h1 {
   margin-bottom: 30px;
-  color:#F3CF67;
+  color: #F3CF67;
   font-weight: 700;
 }
 
@@ -252,11 +279,11 @@ body {
   gap: 10px;
 }
 
-.banner-text h1{
+.banner-text h1 {
   font-weight: 600;
 }
 
-.banner-text h2{
+.banner-text h2 {
   font-size: 40px;
 }
 
@@ -264,7 +291,6 @@ body {
   color: rgba(30, 85, 164, 1);
   font-weight: 900;
 }
-
 
 
 .banner-btn {
@@ -278,48 +304,62 @@ body {
   margin-top: 20px;
 }
 
+.main-second-layer {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.title-alieos {
+  font-size: 20px;
+  position: relative;
+  left: 500px;
+}
 
 @media only screen and (max-width: 1024px) {
-  .main{
+  .main {
     overflow: hidden;
   }
 
-  .nav{
+  .nav {
     display: flex;
     flex-direction: row;
   }
 
-  .nav-right{
+  .nav-right {
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
-  
+
 }
 
 @media only screen and (max-width: 768px) {
-  .front1{
-    display: flex;
-    flex-direction: column;
-  }
-  .crds{
+  .front1 {
     display: flex;
     flex-direction: column;
   }
 
-  .crds-reverse{
+  .crds {
     display: flex;
     flex-direction: column;
   }
 
-  .card-img, .card-img-2 {
+  .crds-reverse {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-img,
+  .card-img-2 {
     width: 60%;
     margin: 0;
     order: 1;
   }
 
-  .card-img-2, .card-img {
+  .card-img-2,
+  .card-img {
     margin: 0;
     order: -1;
   }
@@ -328,26 +368,36 @@ body {
     order: -1;
   }
 
-  .crds-right{
+  .crds-right {
     width: 60%;
     margin-top: 10px;
   }
 
-  .crds-left{
+  .crds-left {
     width: 60%;
     margin-right: 160px;
     margin-top: 20px;
   }
-  
+
 }
 
 @media only screen and (max-width: 480px) {
-  .main{
+  .main {
     width: 100vw;
     padding: 0;
     overflow: hidden;
   }
 
+  .main-second-layer {
+    flex-direction: column;
+    right: 102px;
+    position: relative;
+  }
+
+  .banner-frnt-btn{
+    left: 78px;
+    position: relative;
+  }
   
 
   .nav {
@@ -359,14 +409,14 @@ body {
     margin-bottom: 30px;
   }
 
-  .nav-right{
+  .nav-right {
     width: 135%;
     display: flex;
     flex-direction: row;
     margin-left: -78px;
   }
 
-  .crds{
+  .crds {
     display: flex;
     flex-direction: column;
   }
@@ -381,47 +431,49 @@ body {
     width: 165%;
   }
 
-  .crds-right p{
+  .crds-right p {
     width: 140%;
     margin-left: 10px;
   }
 
-  .crds-reverse{
+  .crds-reverse {
     display: flex;
     flex-direction: column;
     align-items: baseline;
   }
 
-  .crds-right{
+  .crds-right {
     margin-right: 50px;
   }
 
-  .crd-img-2{
+  .crd-img-2 {
     width: 110%;
     margin-left: -18px;
   }
 
-  .crds-left h2{
+  .crds-left h2 {
     margin-left: -70px;
     width: 165%;
   }
 
-  .crds-left h3{
+  .crds-left h3 {
     margin-left: -70px;
     width: 150%;
   }
 
-  .crds-left p{
+  .crds-left p {
     width: 136%;
     margin-left: -52px;
   }
 
-  .card-img, .card-img-2 {
+  .card-img,
+  .card-img-2 {
     margin: 0;
     order: 1;
   }
 
-  .card-img-2, .card-img {
+  .card-img-2,
+  .card-img {
     margin: 0;
     order: -1;
   }
@@ -430,139 +482,168 @@ body {
     order: -1;
   }
 
-  .crds-right{
+  .crds-right {
     width: 60%;
     margin-top: 10px;
   }
 
-  .crds-left{
+  .crds-left {
     width: 60%;
     margin-right: 160px;
     margin-top: 20px;
   }
 
-  .front{
+  .front {
     margin-left: -3px;
   }
 
-  .front-text{
+  .front-text {
     margin-left: 40px;
   }
 
   .front-title {
     font-size: 42px;
-        width: 112%;
-        margin-left: -26px;
+    width: 130%;
+    margin-left: -26px;
+    left: -32px
   }
 
-  .frnt-img img{
+  .frnt-img {
     width: 108%;
+    height: 300px;
   }
 
-  .title-alieos{
+  .frnt-img img {
+    width: 108%;
+    height: 300px;
+  }
+
+  .title-alieos {
     margin-right: 45px;
-        font-size: 20px;
-    
+    font-size: 40px;
+    left: 0;
+
   }
 
-  .front-desc{
+  .front-desc {
     margin-left: -23px;
-        width: 120%;
-        line-height: 32px;
+    width: 120%;
+    line-height: 32px;
+
   }
 
-  .card-img img{
+  .card-img img {
     width: 100%;
   }
 
-  .front-2 p{
+  .front-2 p {
     text-align: justify;
-      width: 100%;
-      line-height: 30px;
+    width: 100%;
+    line-height: 30px;
   }
 
-  .front-img img{
+  .front-img img {
     width: 100%;
   }
 
 
-  .banner{
+  .banner {
     width: 100%;
-  
+
   }
 
-  .banner-text h1{
-    width: 120%;
-    margin-left: -27px;
-  }
-  .banner-text h2{
+  .banner-text h1 {
     width: 120%;
     margin-left: -27px;
   }
 
-  
+  .banner-text h2 {
+    width: 120%;
+    margin-left: -27px;
+  }
 
-  .footer{
+
+
+  .footer {
     width: 120vw;
   }
 
 }
 
 @media only screen and (max-width: 380px) {
-  .main{
+  .main {
     width: 100vw;
     padding: 0;
     overflow: hidden;
   }
-  .front{
+
+  .main-second-layer {
+    flex-direction: column;
+    right: 102px;
+    position: relative;
+  }
+
+  .banner-frnt-btn{
+    left: 78px;
+    position: relative;
+  }
+  
+
+  .front {
     margin-left: -3px;
   }
 
-  .front-text{
+  .front-text {
     margin-left: 40px;
   }
 
   .front-title {
     font-size: 42px;
-        width: 112%;
-        margin-left: -26px;
+    width: 112%;
+    margin-left: -26px;
   }
 
-  .frnt-img img{
+  .frnt-img {
     width: 108%;
+    height: 300px;
   }
 
-  .title-alieos{
+  .frnt-img img {
+    width: 108%;
+    height: 300px;
+  }
+
+  .title-alieos {
     margin-right: 45px;
-        font-size: 20px;
-    
+    font-size: 20px;
+    left: 0;
   }
 
-  .front-desc{
+  .front-desc {
     margin-left: -23px;
-        width: 120%;
-        line-height: 32px;
+    width: 120%;
+    line-height: 32px;
   }
 
-  .card-img img{
+  .card-img img {
     width: 100%;
   }
 
-  .front-2 p{
+  .front-2 p {
     text-align: justify;
-      width: 100%;
-      line-height: 30px;
+    width: 100%;
+    line-height: 30px;
   }
 
-  .front-img img{
+  .front-img img {
     width: 100%;
   }
 
 
-  .footer{
+  .footer {
     width: 120vw;
   }
 
- 
-  
+
+
 }

@@ -28,6 +28,9 @@ body {
 .nav-left img {
   max-width: 100%;
   height: 3rem;
+  position: relative;
+  top: 4px;
+  border-radius: 5px;
 }
 
 .nav-right {
@@ -127,6 +130,7 @@ body {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .principle-item {
@@ -149,6 +153,8 @@ body {
 .principle-desc {
   font-size: 1rem;
   font-weight: 400;
+  text-align: center;
+  width: 300px;
 }
 
 /* Banner Section Styles */
@@ -202,6 +208,26 @@ body {
   margin-top: 20px;
   cursor: pointer;
 }
+
+.principle-img-second-layer img{
+  max-height: 82px;
+  max-width: 82px
+}
+
+.principle-container-one, .principle-container-two{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 60px;
+}
+.principle-container-one{
+  margin-top: 20px;
+}
+
+.principle-container-two{
+  margin-top: 30px;
+}
+
 
 
 /* Responsive Styles */
@@ -282,6 +308,7 @@ body {
     width: 100%;
     font-size: 1rem;
     font-weight: 400;
+
   }
 
   .front-2 p{

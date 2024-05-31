@@ -27,7 +27,10 @@
   .nav-left img {
     max-width: 100%;
     height: 3rem;
-  }
+    position: relative;
+    top: 4px;
+    border-radius: 5px;
+}
   
   .nav-right {
     padding-left: 20px;
